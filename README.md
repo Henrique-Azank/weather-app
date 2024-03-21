@@ -1,34 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Next.js Weather Forecast App
 
-## Getting Started
+Este é um repositório boilerplate para o desenvolvimento de uma pequena aplicação de previsão do tempo usando o Next.js e a API Open Weather. Você pode extender o quanto quiser as funcionalidades e estilizações propostas em sua prórpia branch ou fork. 
 
-First, run the development server:
+<h3>Como Utilizar este repositório:</h3> 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+1. Clone este repositório:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    ```bash
+    git clone https://github.com/Henrique-Azank/weather-app.git
+    ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. Navegue até o diretório do projeto:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+    ```bash
+    cd nome-do-repositorio
+    ```
 
-## Learn More
+3. Instale as dependências:
 
-To learn more about Next.js, take a look at the following resources:
+    ```bash
+    npm install
+    yarn install
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Obtenha uma chave de API da Open Weather e adicione-a ao arquivo .env.local. as chaves de autenticação são distribuídas de forma gratuita 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    ```bash
+    OPEN_API_KEY= "SuaChaveDeAPIAqui"
+    ```
 
-## Deploy on Vercel
+5. Execute o projeto:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```bash
+    npm run dev
+    yarn dev
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    Abra seu navegador e acesse http://localhost:3000 para ver a aplicação em ação.
+
+<h3>Funcionalidades (Ideias):</h3>
+
+- **Pesquisa de Cidade**: Insira o nome de uma cidade na caixa de pesquisa e pressione Enter para ver a previsão do tempo atual para essa cidade.
+
+- **Exibição de Informações**: A aplicação exibirá informações como temperatura, condição do tempo, umidade e velocidade do vento.
+
+- **Design Responsivo**: O layout se adapta a diferentes tamanhos de tela para garantir uma boa experiência do usuário em dispositivos móveis e desktops.
+
+<h3>Tecnologias base utilizadas:</h3>
+
+- **Next.js:** Um framework React para construção de aplicativos web.
+- **React:** Biblioteca JavaScript para construção de interfaces de usuário.
+- **Open Weather API:** API para obtenção de informações meteorológicas.
+- **Tailwind CSS:** Framework CSS para criação de designs customizáveis e responsivos.
+Contribuição
+Contribuições são bem-vindas! Se você tiver sugestões, melhorias de código, ou encontrar algum problema, por favor, abra uma issue ou envie um pull request.
+
+<h3>Licença:</h3>
+
+Este projeto está licenciado sob a Licença MIT.
+Consulte o arquivo LICENSE para obter mais detalhes.
